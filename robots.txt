@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# إرشاد محركات البحث إلى مكان خريطة الموقع
+# استبدل الرابط أدناه برابط موقعك الفعلي
+Sitemap: https://alrasikhun.netlify.app/sitemap.xml
