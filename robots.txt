@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 
-# إرشاد محركات البحث إلى مكان خريطة الموقع
-# استبدل الرابط أدناه برابط موقعك الفعلي
-Sitemap: https://alrasikhun.netlify.app/sitemap.xml
+# رابط خريطة الموقع لمساعدة العناكب على الزحف السريع
+Sitemap: https://alreemcoast.netlify.app/sitemap.xml
