@@ -1,5 +1,7 @@
 User-agent: *
-Allow: /
+Allow: /reem/
+Allow: /reem/pdf/
+Allow: /reem/images/
 
-# رابط خريطة الموقع لمساعدة العناكب على الزحف السريع
-Sitemap: https://alreemcoast.netlify.app/sitemap.xml
+# Sitemap Link
+Sitemap: https://alreemcoast628-dev.github.io/reem/sitemap.xml
