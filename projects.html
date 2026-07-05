@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Alreem Coast | Our Projects</title>
+    <meta name="description" content="Alreem Coast project showcase - landscape design, lighting, irrigation, and more.">
+    <meta name="keywords" content="Alreem Coast, projects, landscape, lighting, irrigation, UAE">
+    <link rel="canonical" href="https://alreemcoastae.com/projects.html" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alreemcoastae.com/projects.html">
+    <meta property="og:title" content="Alreem Coast | Our Projects">
+    <meta property="og:description" content="Showcasing our finest landscape and outdoor works.">
+    <meta property="og:image" content="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="icon/favicon.svg" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+    <link rel="manifest" href="/icon/site.webmanifest" />
+
+    <style>
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-secondary: #111827;
+            --bg-card: rgba(17, 24, 39, 0.7);
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --accent-gradient: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+            --border-glass: rgba(255, 255, 255, 0.06);
+            --header-bg: rgba(10, 14, 26, 0.92);
+
+            --gallery-bg: #0a0a0f;
+            --gallery-surface: #12121a;
+            --gallery-text: #e8e0d5;
+            --gallery-text-muted: #9a9488;
+            --gallery-border: #2a2820;
+            --gold: #d4a853;
+            --gold-light: #f0d78c;
+            --glass-bg: rgba(18, 18, 26, 0.7);
+            --glass-border: rgba(212, 168, 83, 0.25);
+            --shadow-gold: 0 0 40px rgba(212, 168, 83, 0.15);
+            --filter-bg: rgba(18, 18, 26, 0.8);
+            --card-bg: #12121a;
+            --card-text: #f0e6d2;
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #f5f7fa;
+            --bg-secondary: #eef1f5;
+            --bg-card: rgba(255, 255, 255, 0.7);
+            --text-primary: #1a1a2e;
+            --text-secondary: #4a4a6a;
+            --text-muted: #6b6b8a;
+            --border-glass: rgba(0, 0, 0, 0.06);
+            --header-bg: rgba(245, 247, 250, 0.92);
+
+            --gallery-bg: #f8f9fc;
+            --gallery-surface: #ffffff;
+            --gallery-text: #2c2c3a;
+            --gallery-text-muted: #6e6e82;
+            --gallery-border: #e0e0e8;
+            --gold: #b38b40;
+            --gold-light: #8b691b;
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(180, 140, 80, 0.3);
+            --shadow-gold: 0 0 30px rgba(180, 140, 80, 0.08);
+            --filter-bg: rgba(255, 255, 255, 0.8);
+            --card-bg: #ffffff;
+            --card-text: #2c2c3a;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+            padding-top: 72px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== HEADER ===== */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--header-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 12px 0;
+            height: 72px;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .logo-link img {
+            height: 36px;
+            width: auto;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .nav-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-list a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-gradient);
+            transition: width 0.3s;
+        }
+
+        .nav-list a:hover::after,
+        .nav-list a.active::after {
+            width: 100%;
+        }
+
+        .nav-list a:hover,
+        .nav-list a.active {
+            color: var(--text-primary);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .whatsapp-btn-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #25d366;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-btn-header:hover {
+            transform: translateY(-2px);
+            background: #1da851;
+        }
+
+        .theme-toggle-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid var(--border-glass);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid var(--border-glass);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            justify-content: flex-end;
+        }
+        .mobile-menu-overlay.active { display: flex; }
+        .mobile-menu-content {
+            background: var(--bg-primary);
+            width: 80%;
+            max-width: 320px;
+            height: 100%;
+            padding: 32px 24px;
+            animation: slideIn 0.3s ease;
+            overflow-y: auto;
+        }
+        @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
+        .close-menu-btn {
+            align-self: flex-end;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .mobile-logo img { height: 32px; margin: 20px 0; }
+        .mobile-nav-list { list-style: none; display: flex; flex-direction: column; gap: 16px; margin: 20px 0; }
+        .mobile-nav-list a { color: var(--text-secondary); text-decoration: none; font-size: 1.1rem; padding: 8px 0; border-bottom: 1px solid var(--border-glass); }
+        .mobile-whatsapp-btn { display: flex; align-items: center; justify-content: center; gap: 10px; background: #25d366; color: #fff; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: 600; margin: 16px 0; }
+        .mobile-theme-btn { background: var(--bg-secondary); border: 1px solid var(--border-glass); color: var(--text-primary); padding: 12px; border-radius: 12px; cursor: pointer; }
+
+        /* WhatsApp Modal */
+        .whatsapp-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(8px);
+            z-index: 3000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .whatsapp-modal.active { display: flex; }
+        .whatsapp-modal-content {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-glass);
+            border-radius: 24px;
+            padding: 32px;
+            max-width: 450px;
+            width: 100%;
+            position: relative;
+        }
+        .whatsapp-modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-glass);
+            color: var(--text-primary);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .whatsapp-modal-header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+        .whatsapp-modal-header i { font-size: 2rem; color: #25d366; }
+        .btn-whatsapp-send {
+            width: 100%;
+            padding: 14px;
+            background: #25d366;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* ===== GALLERY SECTION ===== */
+        .gallery-page {
+            background: var(--gallery-bg);
+            min-height: calc(100vh - 72px);
+            transition: background-color 0.3s;
+        }
+
+        .gallery-main-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        /* عنوان المشاريع */
+        .projects-title {
+            text-align: center;
+            padding: 25px 0 5px;
+        }
+        .projects-title h2 {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            font-weight: 800;
+            letter-spacing: -1px;
+            background: linear-gradient(180deg, var(--gold-light), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* شريط التصفية الملتصق */
+        .filter-bar {
+            position: sticky;
+            top: 72px;
+            z-index: 50;
+            display: flex;
+            justify-content: center;
+            padding: 12px 8px;
+            background: var(--filter-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--gallery-border);
+            margin-bottom: 20px;
+            transition: background 0.3s;
+        }
+        .filter-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            padding: 6px 10px;
+            box-shadow: var(--shadow-gold);
+            max-width: 100%;
+        }
+        .filter-btn {
+            background: transparent;
+            border: none;
+            color: var(--gallery-text-muted);
+            padding: 8px 18px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            transition: 0.25s;
+            white-space: nowrap;
+            font-family: inherit;
+        }
+        .filter-btn:hover {
+            color: var(--gallery-text);
+            background: rgba(212, 168, 83, 0.08);
+        }
+        .filter-btn.active {
+            background: linear-gradient(135deg, rgba(212, 168, 83, 0.3), rgba(180, 130, 60, 0.5));
+            color: #fff;
+            box-shadow: 0 0 20px rgba(212, 168, 83, 0.25);
+            font-weight: 600;
+            border: 1px solid rgba(212, 168, 83, 0.5);
+        }
+        .filter-count {
+            background: rgba(0,0,0,0.2);
+            border-radius: 20px;
+            padding: 2px 8px;
+            font-size: 0.7rem;
+            margin-left: 4px;
+            color: var(--gold-light);
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            padding: 10px 0;
+        }
+
+        .card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            cursor: pointer;
+            background: var(--card-bg);
+            border: 1px solid var(--gallery-border);
+            transition: transform 0.4s, box-shadow 0.4s;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            animation: cardReveal 0.7s ease-out forwards;
+            opacity: 0;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15), 0 0 40px rgba(212,168,83,0.1);
+        }
+        .card-image-wrapper {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: #eef1f5;
+        }
+        .card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s, filter 0.5s;
+        }
+        .card:hover .card-image-wrapper img {
+            transform: scale(1.05);
+            filter: brightness(1.03);
+        }
+        .card-image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 25px;
+        }
+        .card:hover .card-image-overlay { opacity: 1; }
+        .card-zoom-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(212,168,83,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: #000;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+        .card:hover .card-zoom-icon {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .card-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            border: 1px solid rgba(212,168,83,0.3);
+            z-index: 2;
+        }
+        .card-body {
+            padding: 20px 22px 22px;
+            background: var(--card-bg);
+        }
+        .card-body h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--card-text);
+        }
+        .card-body .card-desc {
+            color: var(--gallery-text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .card-body .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+        .card-body .card-tag {
+            font-size: 0.7rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: rgba(212,168,83,0.08);
+            color: var(--gold);
+            border: 1px solid rgba(212,168,83,0.25);
+        }
+        .card:hover .card-tag {
+            background: rgba(212,168,83,0.15);
+        }
+
+        @keyframes cardReveal {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 4000;
+            background: rgba(0,0,0,0.92);
+            backdrop-filter: blur(30px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s;
+        }
+        .lightbox.active { opacity: 1; pointer-events: all; }
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 88vh;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+            transform: scale(0.9);
+            transition: transform 0.5s;
+            background: #000;
+        }
+        .lightbox.active .lightbox-content { transform: scale(1); }
+        .lightbox-content img {
+            display: block;
+            max-width: 90vw;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 16px;
+        }
+        .lightbox-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 30px;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            color: #fff;
+            text-align: center;
+        }
+        .lightbox-info h3 { font-size: 1.4rem; color: var(--gold-light); }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(20,20,30,0.8);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            font-size: 1.3rem;
+            cursor: pointer;
+            z-index: 4010;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        .lightbox-close:hover { background: rgba(212,68,68,0.7); transform: rotate(90deg); }
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(20,20,30,0.7);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            font-size: 1.4rem;
+            cursor: pointer;
+            z-index: 4010;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        .lightbox-nav:hover { background: rgba(212,168,83,0.5); }
+        .lightbox-prev { left: 20px; }
+        .lightbox-next { right: 20px; }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-glass);
+            padding: 60px 0 0;
+            margin-top: 60px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 0.8fr 1fr 1.2fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-logo { height: 36px; margin-bottom: 16px; }
+        .footer-brand p { color: var(--text-secondary); font-size: 0.95rem; }
+        .social-links { display: flex; gap: 12px; margin-top: 16px; }
+        .social-links a {
+            width: 40px; height: 40px; background: var(--bg-card); border: 1px solid var(--border-glass);
+            border-radius: 10px; display: flex; align-items: center; justify-content: center;
+            color: var(--text-secondary); text-decoration: none; transition: 0.3s;
+        }
+        .social-links a:hover { border-color: var(--accent-blue); color: var(--accent-blue); }
+        .footer h4 { font-size: 1rem; font-weight: 700; margin-bottom: 16px; }
+        .footer ul { list-style: none; }
+        .footer ul li { margin-bottom: 10px; }
+        .footer ul li a, .footer ul li { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; }
+        .footer ul li a:hover { color: var(--accent-blue); }
+        .footer-bottom { border-top: 1px solid var(--border-glass); padding: 20px 0; text-align: center; color: var(--text-muted); font-size: 0.85rem; }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .nav-list { display: none; }
+            .mobile-menu-btn { display: flex; align-items: center; justify-content: center; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+        }
+
+        @media (max-width: 768px) {
+            body { padding-top: 64px; }
+            .main-header { height: 64px; padding: 8px 0; }
+            .header-container { padding: 0 16px; }
+            .logo-link img { height: 30px; }
+            .whatsapp-btn-header span { display: none; }
+            .whatsapp-btn-header { padding: 6px 12px; font-size: 0.8rem; }
+            .filter-bar { top: 64px; padding: 10px 8px; }
+            .filter-inner { gap: 4px; padding: 4px 6px; border-radius: 30px; }
+            .filter-btn { padding: 6px 14px; font-size: 0.78rem; }
+            .gallery-grid { grid-template-columns: 1fr; gap: 20px; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .lightbox-nav { width: 38px; height: 38px; font-size: 1rem; }
+            .lightbox-prev { left: 8px; }
+            .lightbox-next { right: 8px; }
+            .gallery-main-container { padding: 0 12px 40px; }
+        }
+
+        @media (max-width: 480px) {
+            .header-container { padding: 0 12px; }
+            .filter-btn { padding: 4px 10px; font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="Alreem Coast">
+                </a>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projects.html" class="active">My Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <a href="#" class="whatsapp-btn-header" id="whatsappHeaderBtn">
+                    <i class="fab fa-whatsapp"></i> <span>Contact Us</span>
+                </a>
+                <button class="theme-toggle-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <button class="close-menu-btn" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+            <a href="index.html" class="mobile-logo"><img src="images/logo.png" alt="Alreem Coast"></a>
+            <ul class="mobile-nav-list">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="projects.html" class="active">My Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="mobile-whatsapp-btn" id="whatsappMobileBtn"><i class="fab fa-whatsapp"></i> Contact Us</a>
+            <button class="mobile-theme-btn" id="mobileThemeToggle"><i class="fas fa-moon"></i> Switch Theme</button>
+        </div>
+    </div>
+
+    <!-- WHATSAPP MODAL -->
+    <div class="whatsapp-modal" id="whatsappModal">
+        <div class="whatsapp-modal-content">
+            <button class="whatsapp-modal-close" id="whatsappModalClose"><i class="fas fa-times"></i></button>
+            <div class="whatsapp-modal-header"><i class="fab fa-whatsapp"></i><h3>Chat with Us</h3></div>
+            <form id="whatsappForm">
+                <div class="form-group"><input type="text" id="whatsappName" placeholder="Your Name" required></div>
+                <div class="form-group"><input type="email" id="whatsappEmail" placeholder="Your Email"></div>
+                <div class="form-group"><textarea id="whatsappMessage" rows="4" placeholder="Your message..." required></textarea></div>
+                <button type="submit" class="btn-whatsapp-send"><i class="fab fa-whatsapp"></i> Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- GALLERY PAGE -->
+    <main class="gallery-page">
+        <div class="gallery-main-container">
+
+            <!-- شريط التصفية الملتصق -->
+            <div class="filter-bar" id="filterBar">
+                <div class="filter-inner">
+                    <button class="filter-btn active" data-filter="all">All <span class="filter-count">6</span></button>
+                    <button class="filter-btn" data-filter="lighting">Lighting</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="planting">Planting</button>
+                    <button class="filter-btn" data-filter="irrigation">Irrigation</button>
+                    <button class="filter-btn" data-filter="water-features">Water Features</button>
+                    <button class="filter-btn" data-filter="hardscape">Hardscape</button>
+                </div>
+            </div>
+
+            <!-- عنوان القسم -->
+            <div class="projects-title">
+                <h2>Our Projects</h2>
+            </div>
+
+            <!-- شبكة المشاريع -->
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">◀</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">▶</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-info"><h3 id="lightboxTitle"></h3><p id="lightboxDesc"></p></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Alreem Coast" class="footer-logo">
+                    <p>Future Engineering Solutions for a better tomorrow.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projects.html">My Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Landscape Design</li>
+                        <li>Irrigation Systems</li>
+                        <li>Outdoor Lighting</li>
+                        <li>Water Features</li>
+                    </ul>
+                </div>
+                <div class="footer-map">
+                    <h4>Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.123456789!2d55.2708!3d25.2048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDEyJzE3LjMiTiA1NcKwMTYnMTQuOSJF!5e0!3m2!1sen!2sae!4v1710000000000" width="100%" height="150" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Alreem Coast. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const htmlElement = document.documentElement;
+            const themeToggle = document.getElementById('themeToggle');
+            const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+
+            function applyTheme(theme) {
+                htmlElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                const icon = theme === 'light' ? 'fa-sun' : 'fa-moon';
+                document.querySelectorAll('.theme-toggle-btn i, .mobile-theme-btn i').forEach(i => i.className = `fas ${icon}`);
+            }
+
+            function toggleTheme() {
+                applyTheme(htmlElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+            }
+
+            applyTheme(localStorage.getItem('theme') || 'dark');
+            themeToggle?.addEventListener('click', toggleTheme);
+            mobileThemeToggle?.addEventListener('click', toggleTheme);
+
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+            const closeMenuBtn = document.getElementById('closeMenuBtn');
+            mobileMenuBtn?.addEventListener('click', () => { mobileMenuOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; });
+            closeMenuBtn?.addEventListener('click', () => { mobileMenuOverlay.classList.remove('active'); document.body.style.overflow = ''; });
+            mobileMenuOverlay?.addEventListener('click', e => { if(e.target === mobileMenuOverlay) { mobileMenuOverlay.classList.remove('active'); document.body.style.overflow = ''; } });
+            document.querySelectorAll('.mobile-nav-list a').forEach(l => l.addEventListener('click', () => { mobileMenuOverlay.classList.remove('active'); document.body.style.overflow = ''; }));
+
+            const whatsappModal = document.getElementById('whatsappModal');
+            const whatsappModalClose = document.getElementById('whatsappModalClose');
+            const whatsappHeaderBtn = document.getElementById('whatsappHeaderBtn');
+            const whatsappMobileBtn = document.getElementById('whatsappMobileBtn');
+            const whatsappForm = document.getElementById('whatsappForm');
+            const WHATSAPP_PHONE = '971545296084';
+
+            function openWhatsappModal(e) { e.preventDefault(); whatsappModal.classList.add('active'); document.body.style.overflow = 'hidden'; }
+            function closeWhatsappModal() { whatsappModal.classList.remove('active'); document.body.style.overflow = ''; }
+            whatsappHeaderBtn?.addEventListener('click', openWhatsappModal);
+            whatsappMobileBtn?.addEventListener('click', openWhatsappModal);
+            whatsappModalClose?.addEventListener('click', closeWhatsappModal);
+            whatsappModal?.addEventListener('click', e => { if(e.target === whatsappModal) closeWhatsappModal(); });
+            whatsappForm?.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('whatsappName')?.value.trim();
+                const message = document.getElementById('whatsappMessage')?.value.trim();
+                if(!name || !message) return alert('Please fill required fields.');
+                const email = document.getElementById('whatsappEmail')?.value.trim();
+                let text = `Name: ${name}%0A`;
+                if(email) text += `Email: ${email}%0A`;
+                text += `%0AMessage:%0A${message}`;
+                window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${text}`, '_blank');
+                closeWhatsappModal();
+                whatsappForm.reset();
+            });
+
+            const allProjects = [
+                { id: 1, title: 'Outdoor Lighting', category: 'lighting', desc: 'Outdoor lighting is an important element in landscaping, providing clear visibility at night and enhancing the beauty of the landscape. Outdoor lighting is designed and implemented to ensure adequate and appropriate illumination.', tags: ['Lighting', 'Visibility', 'Night'], img: 'images/photo1.png' },
+                { id: 2, title: 'Landscape Design', category: 'design', desc: 'Landscape design is one of the most important stages in creating outdoor spaces. It involves defining the design concept and the elements that will be used to achieve this concept. These elements include plants and trees, pathways, ponds, fountains, and outdoor lighting.', tags: ['Design', 'Concept', 'Elements'], img: 'images/photo2.png' },
+                { id: 3, title: 'Planting Plants & Trees', category: 'planting', desc: 'Planting plants and trees is an essential part of landscape design. Plants are selected that are suitable for the local climate and soil, and they are planted in a way that ensures their healthy growth. This includes preparing the soil, planting the plants, and providing the necessary irrigation and maintenance.', tags: ['Plants', 'Trees', 'Soil'], img: 'images/photo3.png' },
+                { id: 4, title: 'Irrigation Systems', category: 'irrigation', desc: 'Irrigation systems are important elements in landscaping, as they ensure the provision of the necessary water for plants and trees. Irrigation systems are designed and implemented in a way that ensures efficient water use and minimizes waste.', tags: ['Irrigation', 'Water', 'Efficiency'], img: 'images/photo4.png' },
+                { id: 5, title: 'Fountains and Waterfalls', category: 'water-features', desc: 'Fountains and waterfalls add beauty and charm to outdoor spaces. These elements are designed and implemented to ensure a pleasing and comfortable environment.', tags: ['Fountains', 'Waterfalls', 'Beauty'], img: 'images/photo5.png' },
+                { id: 6, title: 'Paths & Walkways', category: 'hardscape', desc: 'Paths and Walkways are an important part of landscape design, as they provide spaces for movement and enjoying the natural scenery. These paths are designed and implemented using suitable materials such as stone, wood, or tiles.', tags: ['Paths', 'Walkways', 'Materials'], img: 'images/photo6.png' }
+            ];
+
+            let currentFilter = 'all';
+            let filteredProjects = [...allProjects];
+            let lightboxIndex = -1;
+
+            const galleryGrid = document.getElementById('galleryGrid');
+            const filterBar = document.getElementById('filterBar');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxTitle = document.getElementById('lightboxTitle');
+            const lightboxDesc = document.getElementById('lightboxDesc');
+            const lightboxClose = document.getElementById('lightboxClose');
+            const lightboxPrev = document.getElementById('lightboxPrev');
+            const lightboxNext = document.getElementById('lightboxNext');
+
+            function getCategoryLabel(cat) {
+                const map = { 'lighting': 'Lighting', 'design': 'Design', 'planting': 'Planting', 'irrigation': 'Irrigation', 'water-features': 'Water Features', 'hardscape': 'Hardscape' };
+                return map[cat] || cat;
+            }
+
+            function renderCards(projects) {
+                galleryGrid.innerHTML = '';
+                projects.forEach((proj, i) => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.style.animationDelay = `${i * 0.08}s`;
+                    card.innerHTML = `
+                        <div class="card-image-wrapper">
+                            <img src="${proj.img}" alt="${proj.title}" loading="lazy">
+                            <div class="card-image-overlay"><div class="card-zoom-icon">🔍</div></div>
+                            <span class="card-badge">${getCategoryLabel(proj.category)}</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>${proj.title}</h3>
+                            <p class="card-desc">${proj.desc}</p>
+                            <div class="card-tags">${proj.tags.map(t => `<span class="card-tag">#${t}</span>`).join('')}</div>
+                        </div>`;
+                    card.addEventListener('click', () => openLightbox(proj.id));
+                    galleryGrid.appendChild(card);
+                });
+            }
+
+            filterBar.addEventListener('click', (e) => {
+                const btn = e.target.closest('.filter-btn');
+                if (!btn) return;
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.getAttribute('data-filter');
+                filteredProjects = currentFilter === 'all' ? [...allProjects] : allProjects.filter(p => p.category === currentFilter);
+                renderCards(filteredProjects);
+            });
+
+            function openLightbox(projectId) {
+                const idx = filteredProjects.findIndex(p => p.id === projectId);
+                if (idx === -1) return;
+                lightboxIndex = idx;
+                updateLightboxContent();
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function updateLightboxContent() {
+                if (lightboxIndex < 0 || lightboxIndex >= filteredProjects.length) return;
+                const proj = filteredProjects[lightboxIndex];
+                lightboxImg.src = proj.img;
+                lightboxImg.alt = proj.title;
+                lightboxTitle.textContent = proj.title;
+                lightboxDesc.textContent = proj.desc;
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+                lightboxIndex = -1;
+            }
+
+            function navigateLightbox(dir) {
+                if (filteredProjects.length === 0) return;
+                lightboxIndex += dir;
+                if (lightboxIndex < 0) lightboxIndex = filteredProjects.length - 1;
+                if (lightboxIndex >= filteredProjects.length) lightboxIndex = 0;
+                updateLightboxContent();
+            }
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+            lightboxPrev.addEventListener('click', e => { e.stopPropagation(); navigateLightbox(-1); });
+            lightboxNext.addEventListener('click', e => { e.stopPropagation(); navigateLightbox(1); });
+            document.addEventListener('keydown', e => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') navigateLightbox(1);
+                if (e.key === 'ArrowLeft') navigateLightbox(-1);
+            });
+
+            renderCards(allProjects);
+        })();
+    </script>
+</body>
+</html>
