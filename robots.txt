@@ -1,6 +1,5 @@
 User-agent: *
-Allow: /reem/
+Allow: /
 
 # Sitemap Link
 Sitemap: https://alreemcoast628-dev.github.io/reem/sitemap.xml
-
