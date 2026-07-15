@@ -1208,3 +1208,100 @@ body {
 }
 
 
+/* 
+============================================
+================(START LOGO)================
+============================================
+*/
+
+/* ضبط الهيدر الأساسي */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--header-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-glass);
+    padding: 12px 0;
+    transition: background 0.3s ease;
+    height: 72px !important; 
+    overflow: hidden;
+}
+
+body {
+    padding-top: 72px !important; 
+}
+
+/* لوجو الهيدر (أعلى الصفحة) */
+.logo-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.logo-link img {
+    width: auto !important;
+    height: 42px !important;   
+    max-width: 100% !important;
+    max-height: 42px !important;
+    object-fit: contain !important; 
+    background: transparent !important;
+    display: block !important;
+}
+
+/* لوجو الـ main (Hero) فوق الجملة - الإعدادات الأساسية لكل الشاشات */
+.hero-logo-wrapper {
+    margin-bottom: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+.hero-logo-wrapper img,
+.hero-main-logo {
+    width: auto !important;
+    height: 80px !important;   
+    max-width: 100% !important;
+    max-height: 80px !important;
+    object-fit: contain !important; 
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: block !important;
+}
+
+/* ✅ تنسيق خاص بشاشات الكمبيوتر (1024px فأكثر) */
+@media (min-width: 1024px) {
+    .hero-logo-wrapper img,
+    .hero-main-logo {
+        width: auto !important;
+        height: 70px !important;
+        max-width: 100% !important;
+        max-height: 70px !important;
+    }
+}
+
+/* لوجو الفوتر */
+.footer-logo {
+    width: auto !important;
+    height: 50px !important;
+    max-width: 100% !important;
+    max-height: 50px !important;
+    object-fit: contain !important;
+    background: transparent !important;
+    margin-bottom: 16px !important;
+}
+.logo-one img{
+    width: 60px;
+    height: 60px;
+}
+/* 
+============================================
+================(END   LOGO)================
+============================================
+*/
